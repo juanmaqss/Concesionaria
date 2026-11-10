@@ -1,4 +1,5 @@
 import { brand } from './config/brand'
+import { contact } from './config/contact'
 
 export default function App() {
   return (
@@ -7,8 +8,20 @@ export default function App() {
         <h1 className="font-display text-3xl font-bold">{brand.name}</h1>
         <p className="mt-2 text-white/80">{brand.tagline}</p>
       </header>
-      <section className="p-6">
-        <p>Sitio en construcción</p>
+      <section className="space-y-2 p-6">
+        <p>
+          {contact.address.street}, {contact.address.city}, {contact.address.province}
+        </p>
+        <p>
+          Tel: {contact.phoneDisplay} · {contact.email}
+        </p>
+        <ul>
+          {contact.hours.map((h) => (
+            <li key={h.days}>
+              {h.days}: {h.time}
+            </li>
+          ))}
+        </ul>
       </section>
     </main>
   )
