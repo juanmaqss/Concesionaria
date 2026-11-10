@@ -1,0 +1,19 @@
+@theme {
+    /* Marca */
+    --color-brand: #1B1F24;
+    --color-accent: #2457D6;
+    --color-surface: #F3F5F8;
+    --color-ink: #14181D;
+    --color-muted: #5B6470;
+
+    /* Estados del vehículo y acciones */
+    --color-available: #1B7F45;
+    --color-reserved: #B26A00;
+    --color-sold: #5B6470;
+    --color-whatsapp: #1B7F45;
+    --color-danger: #C62828;
+
+    /* Tipografías */
+    --font-sans: "Inter Variable", system-ui, sans-serif;
+    --font-display: "Manrope Variable", system-ui, sans-serif;
+}
